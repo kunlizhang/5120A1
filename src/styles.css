@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .warning {
+    background-color: #FFA500;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    filter: drop-shadow(16px 16px);
+  }
+  
+  .current-weather {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .temp-icon img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .temperature {
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 2em; /* Adjust the font size as needed */
+  }
+
+  .location, .low-high {
+    font-family: 'SF Pro Display', sans-serif;
+    margin-top: 5px; /* Optional: Add some space between the elements */
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .detail {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .greeting {
+    background-color: #ADD8E6;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .hourly-forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .hour {
+    text-align: center;
+  }
+  
+  .hour .time, .hour .temp, .hour .chance {
+    font-size: 14px;
+  }
+  
+  .weekly-forecast {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .day {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .day-name, .icon, .temp, .chance, .sunrise-sunset {
+    font-size: 14px;
+    text-align: center;
+  }
+  

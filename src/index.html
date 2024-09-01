@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="output.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Severe Weather Warning -->
+    <div class="bg-warning-orange text-center p-3 rounded-lg flex items-center justify-center space-x-3 drop-shadow-lg">
+      <img src="../static/warning.png" class="w-14 h-14" alt="Warning Icon">
+      <div class="text-left">
+        <p class="text-lg font-bold">
+          Severe Weather Warning!
+        </p>
+        <p class="text-xs font-semibold">
+          Thunderstorms starting at 4pm. Expected to end at 6pm. Please plan ahead.
+        </p>
+      </div>
+    </div>
+
+    <!-- Current Weather -->
+    <div class="flex items-center space-x-4 p-2">
+      <!-- Sun Icon -->
+      <img src="../static/sun.png" class="w-40 h-40 drop-shadow-md" alt="Sun Icon">
+      <!-- Temperature and Details -->
+      <div class="text-center">
+        <!-- Temperature Display -->
+        <div class="text-sun-yellow text-9xl font-bold text-gray-800 drop-shadow-md">
+          25
+        </div>
+        <!-- Location and High/Low -->
+        <div class="text-gray-500">
+          <div class="flex justify-between text-sm">
+            <span class="text-low-blue">L: 15</span>
+            <span class="text-hot-orange">H: 32</span>
+          </div>
+          <p class="text-xl font-semibold text-sun-yellow">Philadelphia, PA</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weather Details -->
+    <div class="bg-soft-blue text-gray-800 p-2 rounded-lg">
+      <!-- 2x3 Grid Layout -->
+      <div class="grid grid-cols-3 gap-1">
+        <!-- Precipitation -->
+        <div class="flex flex-row items-center">
+          <img src="../static/humidity.png" class="w-9 h-9" alt="Humidity Icon">
+          <p class="font-semibold p-1">13%</p>
+        </div>
+        <!-- Wind Speed -->
+        <div class="flex flex-row items-center">
+          <img src="../static/windy.png" class="w-9 h-9" alt="Wind Icon">
+          <p class="font-semibold p-1">20 <span class="text-[0.4rem]">km/h SE</span></p>
+        </div>
+        <!-- Sunrise -->
+        <div class="flex flex-row items-center">
+          <img src="../static/sunrise.png" class="w-9 h-9" alt="Sunrise Icon">
+          <p class="font-semibold p-1">6:31am</p>
+        </div>
+        <!-- Humidity -->
+        <div class="flex flex-row items-center">
+          <img src="../static/rainy.png" class="w-9 h-9" alt="Rain Icon">
+          <p class="font-semibold p-1">60%</p>
+        </div>
+        <!-- Air Quality -->
+        <div class="flex flex-row items-center">
+          <img src="../static/medical-mask.png" class="w-9 h-9" alt="Air Quality Icon">
+          <p class="font-semibold p-1">10 <span class="text-[0.4rem]">ppm</span></p>
+        </div>
+        <!-- Sunset -->
+        <div class="flex flex-row items-center">
+          <img src="../static/sunset.png" class="w-9 h-9" alt="Sunset Icon">
+          <p class="font-semibold p-1">7:27pm</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Greeting -->
+    <div class="bg-soft-blue p-3 rounded-lg flex items-center justify-betweenm mt-2">
+      <!-- Left Umbrella Icon -->
+      <img src="../static/umbrella.png" class="w-11 h-11" alt="Umbrella Icon">
+      
+      <!-- Greeting Text -->
+      <div class="text-center">
+        <p class="text-lg font-semibold">G'Day John!</p>
+        <p class="text-sm mx-1">Make sure you bring an umbrella to work today!</p>
+      </div>
+      
+      <!-- Right Umbrella Icon -->
+      <img src="../static/umbrella.png" class="w-11 h-11" alt="Umbrella Icon">
+    </div>
+
+    <!-- Hourly Forecast -->
+    <div class="p-2 bg-soft-blue rounded-lg mt-2">
+      <div class="flex overflow-x-auto space-x-2">
+        <!-- Hourly Weather Blocks -->
+        <div class="flex flex-col items-center bg-white p-3 rounded-lg shadow-md w-20">
+          <p class="font-bold">13:00</p>
+          <img src="../static/sun.png" class="w-8 h-8" alt="Sun Icon">
+          <p class="font-semibold">28</p>
+          <p class="text-blue-500">30%</p>
+        </div>
+        <div class="flex flex-col items-center bg-white p-3 rounded-lg shadow-md w-20">
+          <p class="font-bold">14:00</p>
+          <img src="../static/sun.png" class="w-8 h-8" alt="Sun Icon">
+          <p class="font-semibold">24</p>
+          <p class="text-blue-500">20%</p>
+        </div>
+        <div class="flex flex-col items-center bg-white p-3 rounded-lg shadow-md w-20">
+          <p class="font-bold">15:00</p>
+          <img src="../static/rainy.png" class="w-8 h-8" alt="Sun Icon">
+          <p class="font-semibold">23</p>
+          <p class="text-blue-500">50%</p>
+        </div>
+        <div class="flex flex-col items-center bg-white p-3 rounded-lg shadow-md w-20">
+          <p class="font-bold">16:00</p>
+          <img src="../static/storm.png" class="w-8 h-8" alt="Sun Icon">
+          <p class="font-semibold">21</p>
+          <p class="text-blue-500">100%</p>
+        </div>
+        <div class="flex flex-col items-center bg-white p-3 rounded-lg shadow-md w-20">
+          <p class="font-bold">17:00</p>
+          <img src="../static/storm.png" class="w-8 h-8" alt="Sun Icon">
+          <p class="font-semibold">21</p>
+          <p class="text-blue-500">100%</p>
+        </div>
+        <div class="flex flex-col items-center bg-white p-3 rounded-lg shadow-md w-20">
+          <p class="font-bold">18:00</p>
+          <img src="../static/storm.png" class="w-8 h-8" alt="Sun Icon">
+          <p class="font-semibold">19</p>
+          <p class="text-blue-500">80%</p>
+        </div>
+        <div class="flex flex-col items-center bg-white p-3 rounded-lg shadow-md w-20">
+          <p class="font-bold">19:00</p>
+          <img src="../static/night.png" class="w-8 h-8" alt="Sun Icon">
+          <p class="font-semibold">15</p>
+          <p class="text-blue-500">30%</p>
+        </div>
+        <div class="flex flex-col items-center bg-white p-3 rounded-lg shadow-md w-20">
+          <p class="font-bold">20:00</p>
+          <img src="../static/nightclouds.png" class="w-8 h-8" alt="Sun Icon">
+          <p class="font-semibold">15</p>
+          <p class="text-blue-500">10%</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weekly Forecast -->
+    <div class="flex flex-col overflow-y-auto space-y-2 p-2 bg-soft-blue rounded-lg mt-2 h-32">
+      <!-- Day 1 -->
+      <div class="flex items-center justify-between bg-white p-2 rounded-lg shadow-md">
+        <p class="font-bold w-8">Sat</p>
+        <img src="../static/sun.png" class="w-8 h-8" alt="Sun Icon">
+        <p class="">L: 15</p>
+        <p class="">H: 32</p>
+        <div class="flex flex-row items-center">
+          <img src="../static/rainy.png" class="w-4 h-4 mx-1" alt="Rain Icon">
+          <p class="">10%</p>
+        </div>
+        <div class="flex flex-row items-center">
+          <img src="../static/medical-mask.png" class="w-4 h-4 mx-1" alt="Air Quality">
+          <p class="">15<span class="text-[0.6rem]">ppm</span></p>
+        </div>
+      </div>
+      <!-- Day 2 -->
+      <div class="flex items-center justify-between bg-white p-2 rounded-lg shadow-md">
+        <p class="font-bold w-8">Sun</p>
+        <img src="../static/sun.png" class="w-8 h-8" alt="Sun Icon">
+        <p class="">L: 15</p>
+        <p class="">H: 32</p>
+        <div class="flex flex-row items-center">
+          <img src="../static/rainy.png" class="w-4 h-4 mx-1" alt="Rain Icon">
+          <p class="">10%</p>
+        </div>
+        <div class="flex flex-row items-center">
+          <img src="../static/medical-mask.png" class="w-4 h-4 mx-1" alt="Air Quality">
+          <p class="">15<span class="text-[0.6rem]">ppm</span></p>
+        </div>
+      </div>
+      <!-- Day 3 -->
+      <div class="flex items-center justify-between bg-white p-2 rounded-lg shadow-md">
+        <p class="font-bold w-8">Mon</p>
+        <img src="../static/sun.png" class="w-8 h-8" alt="Sun Icon">
+        <p class="">L: 15</p>
+        <p class="">H: 32</p>
+        <div class="flex flex-row items-center">
+          <img src="../static/rainy.png" class="w-4 h-4 mx-1" alt="Rain Icon">
+          <p class="">10%</p>
+        </div>
+        <div class="flex flex-row items-center">
+          <img src="../static/medical-mask.png" class="w-4 h-4 mx-1" alt="Air Quality">
+          <p class="">15<span class="text-[0.6rem]">ppm</span></p>
+        </div>
+      </div>
+      <div class="flex items-center justify-between bg-white p-2 rounded-lg shadow-md">
+        <p class="font-bold w-8">Tue</p>
+        <img src="../static/sun.png" class="w-8 h-8" alt="Sun Icon">
+        <p class="">L: 15</p>
+        <p class="">H: 32</p>
+        <div class="flex flex-row items-center">
+          <img src="../static/rainy.png" class="w-4 h-4 mx-1" alt="Rain Icon">
+          <p class="">10%</p>
+        </div>
+        <div class="flex flex-row items-center">
+          <img src="../static/medical-mask.png" class="w-4 h-4 mx-1" alt="Air Quality">
+          <p class="">15<span class="text-[0.6rem]">ppm</span></p>
+        </div>
+      </div>
+      <div class="flex items-center justify-between bg-white p-2 rounded-lg shadow-md">
+        <p class="font-bold w-8">Wed</p>
+        <img src="../static/sun.png" class="w-8 h-8" alt="Sun Icon">
+        <p class="">L: 15</p>
+        <p class="">H: 32</p>
+        <div class="flex flex-row items-center">
+          <img src="../static/rainy.png" class="w-4 h-4 mx-1" alt="Rain Icon">
+          <p class="">10%</p>
+        </div>
+        <div class="flex flex-row items-center">
+          <img src="../static/medical-mask.png" class="w-4 h-4 mx-1" alt="Air Quality">
+          <p class="">15<span class="text-[0.6rem]">ppm</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
